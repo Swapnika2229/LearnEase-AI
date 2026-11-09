@@ -19,6 +19,38 @@ LearnEase AI aims to make learning easier by converting complex content into cle
 - **Multiple Input Options:** Accepts academic topics, pasted text, PDF, and DOCX files.
 - **Learning Levels:** Supports different learner levels.
 
+## 🖥️ Application Screenshots
+
+### 1. Dashboard
+![LearnEase AI Dashboard](LearnEase_AI_Screenshots/1.%20Dashboard.png)
+
+### 2. Create Study Pack
+![Create Study Pack](LearnEase_AI_Screenshots/2.%20Create%20Study%20Pack.png)
+
+### 3. Learning Preferences
+![Learning Preferences](LearnEase_AI_Screenshots/3.%20Learning%20Preferences.png)
+
+### 4. Definition and Simple Explanation
+![Definition and Simple Explanation](LearnEase_AI_Screenshots/4.%20Definition%20and%20Simple%20Explanation.png)
+
+### 5. Key Points and Important Terms
+![Key Points and Important Terms](LearnEase_AI_Screenshots/5.%20Key%20Points%20and%20Important%20Terms.png)
+
+### 6. Real-Life Examples
+![Real-Life Examples](LearnEase_AI_Screenshots/6.%20Real-Life%20Examples.png)
+
+### 7. Exam Questions and Answers
+![Exam Questions and Answers](LearnEase_AI_Screenshots/7.%20Exam%20Questions%20and%20Answers.png)
+
+### 8. How It Works
+![How It Works](LearnEase_AI_Screenshots/8.%20How%20It%20Works.png)
+
+### 9. About the Project
+![About the Project](LearnEase_AI_Screenshots/9.%20About%20the%20Project.png)
+
+### 10. Technology Stack Details
+![Technology Stack Details](LearnEase_AI_Screenshots/10.%20Technology%20Stack%20Details.png)
+
 ## 🛠️ Technologies Used
 
 - Python
@@ -30,50 +62,35 @@ LearnEase AI aims to make learning easier by converting complex content into cle
 - PyMuPDF
 - python-docx
 
-## 🖥️ Application Screenshots
-
-### 1. Homepage
-![LearnEase AI Homepage](01_Homepage.png)
-
-### 2. User Input
-![User Input](02_User_Input.png)
-
-### 3. Generated Study Pack
-![Generated Study Pack](03_Generated_Study_Pack.png)
-
-### 4. Important Terms and Examples
-![Important Terms and Examples](04_Important_Terms_Examples.png)
-
-### 5. Exam Questions and Revision
-![Exam Questions](05_Exam_Questions.png)
-
 ## ⚙️ Installation and Setup
 
-1. Clone the repository:
+**1. Clone the repository**
 
-   ```bash
-   git clone https://github.com/Swapnika2229/LearnEase-AI.git
-   ```
+```bash
+git clone https://github.com/Swapnika2229/LearnEase-AI.git
+```
 
-2. Navigate to the project directory:
+**2. Navigate to the project directory**
 
-   ```bash
-   cd LearnEase-AI
-   ```
+```bash
+cd LearnEase-AI
+```
 
-3. Install dependencies:
+**3. Install dependencies**
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+```bash
+pip install -r requirements.txt
+```
 
-4. Create a `.env` file and configure your IBM watsonx.ai credentials using the variable names expected by `granite_client.py`.
+**4. Configure IBM watsonx.ai credentials**
 
-5. Run the application:
+Create a `.env` file and configure your IBM watsonx.ai credentials using the variable names expected by `granite_client.py`.
 
-   ```bash
-   streamlit run app.py
-   ```
+**5. Run the application**
+
+```bash
+streamlit run app.py
+```
 
 ## 🔐 Responsible AI
 
