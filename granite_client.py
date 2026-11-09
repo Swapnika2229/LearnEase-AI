@@ -61,15 +61,33 @@ def generate_learning_content(source, level, output_type):
     # Per-output-type instructions — precise, structured, no waffle
     task_instructions = {
         "Complete study pack": """\
-Produce a complete study pack with exactly these numbered sections:
-1. Definition — one clear sentence defining the topic.
-2. Simple Explanation — 3-5 sentences explaining the topic plainly, step by step.
-3. Key Points — a bullet list of the 5-8 most important facts or concepts.
-4. Important Terms — a short glossary: term: definition for each key term.
-5. Real-Life Examples — 2-3 concrete, specific examples with a one-sentence explanation each.
-6. Exam Questions and Answers — exactly 5 exam-style questions with full answers (mix short-answer and descriptive).
-7. Revision Summary — 3-5 sentences summarising the most important concepts and keywords.
-Output only these seven sections. Do not add introductions, sign-offs, or commentary outside these sections.""",
+Produce a thorough and detailed complete study pack. Write ALL seven sections in full. Do not abbreviate, truncate, or skip any section.
+
+## 1. Definition
+Write one clear, accurate sentence that precisely defines the topic.
+
+## 2. Simple Explanation
+Explain the topic in plain language suitable for the specified level. Write at least 4-6 sentences, breaking the concept down step by step. Assume no prior knowledge for Beginner; moderate knowledge for Intermediate; strong knowledge for Exam-focused.
+
+## 3. Key Points
+List 6-8 of the most important facts, principles, or concepts as bullet points. Each bullet should be a complete, informative sentence, not just a label.
+
+## 4. Important Terms
+Provide a glossary of 5-8 key terms. Format each as:
+**Term**: definition in one or two sentences.
+
+## 5. Real-Life Examples
+Give 3 concrete, specific, real-world examples that clearly illustrate the topic. For each example, write 2-3 sentences: name the example, explain what it is, and explain how it demonstrates the topic.
+
+## 6. Exam Questions and Answers
+Write exactly 5 exam-style questions with detailed model answers. Mix question types: include at least 2 short-answer questions and 2 descriptive questions. Format each as:
+**Q1:** [question]
+**A1:** [detailed answer — at least 3 sentences]
+
+## 7. Revision Summary
+Write 4-6 sentences summarising the most important concepts, terms, and takeaways. This section should serve as a final memory-aid for exam preparation.
+
+Output all seven sections in order. Do not add any introduction before Section 1 or any sign-off after Section 7.""",
 
         "Simple explanation": """\
 Write a plain-language explanation of the topic suitable for a student at the specified level.
@@ -139,8 +157,8 @@ Task:
         "input": prompt,
         "parameters": {
             "decoding_method": "greedy",
-            "max_new_tokens": 1200,
-            "min_new_tokens": 1,
+            "max_new_tokens": 4000,
+            "min_new_tokens": 50,
             "repetition_penalty": 1.05,
         },
     }
